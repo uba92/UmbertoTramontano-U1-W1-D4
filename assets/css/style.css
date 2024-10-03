@@ -1,144 +1,220 @@
 /* IMPOSTAZIONI GENERALI */
 body {
-    width: 500px;
+    width: 450px;
     font-family: "Poppins", sans-serif;
-    font-weight: 100;
+    font-weight: 400;
     font-style: normal;
-}
-
-h1 {
-    font-size: 2em;
-    font-weight: bold;
-    text-align: center;
-    margin: 0 20px;
-}
-
-h2 {
-    font-size: 1.5em;
-    font-weight: bold;
-    text-align: center;
-    margin: 0 20px;
-}
-
-/* HEADER */
-header {
     background-image: url(../img/sfondo.png);
-    background-position: center;
-    background-size: cover;
-    height: 350px;
+    background-position: center center;
+    margin: 0 auto;
+    line-height: 1.5;
 }
 
-#logo-container {
-    background-color: #008aac;
-    width: 80%;
-    height: 90%;
-    margin-left: auto;
-    margin-right: auto;
+* {
+    box-sizing: border-box;
+}
+
+/*HEADER*/
+header {
+    margin: 1.5em 1em;
     text-align: center;
-    color: white;
-    box-shadow: 0 3px 5px rgb(82, 77, 77);
+    background: rgb(0, 160, 198);
+    background: linear-gradient(180deg, rgba(0, 160, 198, 1) 0%, rgba(3, 109, 134, 1) 68%);
+    box-shadow: 0 3px 5px #444;
 }
 
-#logo-container img {
+header img {
     width: 300px;
-    margin: 20px 20px;
+    margin: 2em;
 }
 
-header div nav {
-    margin: 20px 20px;
-}
-
-header li {
-    margin: 10px 10px;
-}
-
-#logo-container a {
+header h1 {
     color: white;
-    text-decoration: none;
-    font-weight: bold;
+    font-size: 1.3em;
+    margin-bottom: 1em;
+    font-weight: 600;
 }
 
-#logo-container p {
-    font-weight: bold;
-    text-transform: uppercase;
+header ul {
+    padding: 0.8em;
+}
+
+header ul li {
+    margin-bottom: 1em;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
 }
 
 /* MAIN */
 main {
-    background-image: url(../img/sfondo.png);
-    font-weight: 300;
+    background-color: white;
+    margin: 1.5em 1em;
+    box-shadow: 0 3px 5px;
+    padding: 2em 1.2em;
 }
+
+main h1 {
+    font-size: 2em;
+    letter-spacing: -0.03em;
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+
 
 /* ELEMENTI NEL MAIN - ARTICLE */
-main article {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 3px 5px rgb(82, 77, 77);
-    background-color: white;
-}
-
-#main-title {
-    padding: 20px;
-}
-
 #author {
     color: gray;
-    font-weight: 400;
-    padding: 10px;
+    padding: 1em;
 }
 
-article p:nth-of-type(2) {
-    padding: 20px;
+
+article p:nth-of-type(2) span {
+    font-weight: 600;
+    color: fuchsia;
 }
 
-article p:nth-of-type(3) {
-    padding: 20px;
-}
 
-article ul {
-    padding: 30px;
+main article ul {
     list-style-type: disc;
+    padding: 0 2em;
 }
 
-.special {
-    font-weight: bold;
-    color: rgb(214, 16, 92);
+main article ul li code {
+    background-color: lightgray;
+    border: 1px solid rgb(161, 146, 146);
+    border-radius: 5px;
 }
 
-#ordered-list {
-    padding: 30px;
+main article h2 {
+    margin-top: 1.5em;
 }
 
-article ol {
+main article ol {
     list-style-type: decimal;
-    padding: 35px;
+    padding: 0 2em;
 }
 
+p {
+    margin-bottom: 1.5em;
+}
+
+iframe {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
 
 /* TABELLE */
-
 table caption {
     font-style: italic;
     font-weight: bold;
 }
 
-#table-container {
-    padding: 30px;
+thead tr {
+    background-color: #3f6bca;
+    color: #ffffff;
 }
 
-.table-heading {
-    background-color: #008aac;
-    height: 40px;
-    border: 1px solid white;
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
 }
 
 tbody tr {
-    cellspacing: 20px;
+    border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:last-of-type {
+    border-bottom: 2px solid #3f6bca;
+}
+
+table {
+    margin-bottom: 2em;
 }
 
 /* FORM */
+section {
+    background-color: #ddd;
+    margin-bottom: 1.5em;
+}
+
+section h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
+    padding: 1em;
+}
+
+#newsletter-paragraph {
+    color: black;
+}
+
+fieldset {
+    text-align: center;
+    padding-bottom: 1.5em;
+}
+
+input {
+    padding: 0.5em;
+    border: 0;
+    border-bottom: 1px dashed #645f5f;
+}
+
+button {
+    border: 0;
+    padding: 4px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    background-color: #3f6bca;
+}
 
 /* ELEMENTI NELL' ASIDE */
+aside h2 {
+    font-size: 2em;
+    font-weight: 500;
+    text-align: center;
+}
+
+aside div {
+    background-color: #ddd;
+    border: 1px solid #c3c3c3;
+    margin: 1.5em 0;
+    padding: 0.8em;
+}
+
+aside .date-related {
+    text-align: right;
+}
 
 /* FOOTER */
+
+footer {
+    background: rgb(53, 53, 53);
+    background: linear-gradient(0deg, rgba(53, 53, 53, 1) 0%, rgba(5, 85, 103, 1) 68%);
+    box-shadow: 0 3px 3px #444;
+    color: white;
+    margin: 1.5em 1em;
+    text-align: center;
+}
+
+footer p {
+    padding-top: 1em;
+}
+
+footer address {
+    padding-bottom: 1em;
+}
+
+footer address a {
+    color: fuchsia;
+}
