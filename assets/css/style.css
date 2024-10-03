@@ -1,12 +1,141 @@
 /* IMPOSTAZIONI GENERALI */
+body {
+    width: 500px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 20px;
+}
 
 /* HEADER */
+header {
+    background-image: url(../img/sfondo.png);
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+}
+
+#logo-container {
+    background-color: #008aac;
+    width: 80%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: white;
+    box-shadow: 0 3px 5px rgb(82, 77, 77);
+}
+
+#logo-container img {
+    width: 300px;
+    margin: 20px 20px;
+}
+
+header div nav {
+    margin: 20px 20px;
+}
+
+header li {
+    margin: 10px 10px;
+}
+
+#logo-container a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#logo-container p {
+    font-weight: bold;
+    text-transform: uppercase;
+}
 
 /* MAIN */
+main {
+    background-image: url(../img/sfondo.png);
+    font-weight: 300;
+}
 
 /* ELEMENTI NEL MAIN - ARTICLE */
+main article {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 3px 5px rgb(82, 77, 77);
+    background-color: white;
+}
+
+#main-title {
+    padding: 20px;
+}
+
+#author {
+    color: gray;
+    font-weight: 400;
+    padding: 10px;
+}
+
+article p:nth-of-type(2) {
+    padding: 20px;
+}
+
+article p:nth-of-type(3) {
+    padding: 20px;
+}
+
+article ul {
+    padding: 30px;
+    list-style-type: disc;
+}
+
+.special {
+    font-weight: bold;
+    color: rgb(214, 16, 92);
+}
+
+#ordered-list {
+    padding: 30px;
+}
+
+article ol {
+    list-style-type: decimal;
+    padding: 35px;
+}
+
 
 /* TABELLE */
+
+table caption {
+    font-style: italic;
+    font-weight: bold;
+}
+
+#table-container {
+    padding: 30px;
+}
+
+.table-heading {
+    background-color: #008aac;
+    height: 40px;
+    border: 1px solid white;
+}
+
+tbody tr {
+    cellspacing: 20px;
+}
 
 /* FORM */
 

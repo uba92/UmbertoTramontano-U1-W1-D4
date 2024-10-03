@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -21,43 +27,44 @@
       <div id="logo-container">
         <img src="./assets/img/logo.svg" alt="logo_del_sito" />
         <p>Epicode - Il blog dei developers</p>
+        <nav>
+          <ul>
+            <li>
+              <a target="blank" href="#" title="Home Page"
+                ><i class="fas fa-arrow-right"></i>HOME<i
+                  class="fas fa-arrow-left"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a target="blank" href="#" title="Elenco articoli"
+                ><i class="fas fa-arrow-right"></i>ARTICOLI<i
+                  class="fas fa-arrow-left"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a target="blank" href="#" title="Invia il tuo CV"
+                ><i class="fas fa-arrow-right"></i>LAVORA CON NOI<i
+                  class="fas fa-arrow-left"
+                ></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          <li>
-            <a target="blank" href="#" title="Home Page"
-              ><i class="fas fa-arrow-right"></i>HOME<i
-                class="fas fa-arrow-left"
-              ></i
-            ></a>
-          </li>
-          <li>
-            <a target="blank" href="#" title="Elenco articoli"
-              ><i class="fas fa-arrow-right"></i>ARTICOLI<i
-                class="fas fa-arrow-left"
-              ></i
-            ></a>
-          </li>
-          <li>
-            <a target="blank" href="#" title="Invia il tuo CV"
-              ><i class="fas fa-arrow-right"></i>LAVORA CON NOI<i
-                class="fas fa-arrow-left"
-              ></i
-            ></a>
-          </li>
-        </ul>
-      </nav>
     </header>
     <main>
       <article>
-        <h1>Come creare un template per i post</h1>
-        <p>
+        <h1 id="main-title">Come creare un template per i post</h1>
+        <p id="author">
           <i class="fas fa-pen-square"></i> di Mario Rossi -
           <span><i class="fas fa-clock"></i> pubblicato il 25-10-2020</span>
         </p>
         <p>
           La prima cosa da fare è suddividere in blocchi logici la pagina,
-          identificando le parti comuni da applicare a tutte le pagine
+          identificando le <span class="special">parti comuni</span> da
+          applicare a tutte le pagine
         </p>
         <p>Le varie aree saranno quindi suddivise in:</p>
         <ul>
@@ -71,66 +78,72 @@
             <code>&lt;footer&gt;</code>
           </li>
         </ul>
-        <h2>Formattazione del codice</h2>
-        <p>
-          Il testo dell'articolo dovrà essere formattato per identificare tutte
-          le parti da <strong>selezionare con i CSS</strong>. Perciò i passi
-          saranno:
-        </p>
-        <ol>
-          <li>
-            Progettare su carta il markup finale, assegnando ad ogni specifico
-            testo il tag appropriato
-          </li>
-          <li>
-            Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso
-            il basso
-          </li>
-          <li>Applicare gli stili CSS</li>
-        </ol>
+        <div id="ordered-list">
+          <span>Formattazione del codice</span>
+          <p>
+            Il testo dell'articolo dovrà essere formattato per identificare
+            tutte le parti da <strong>selezionare con i CSS</strong>. Perciò i
+            passi saranno:
+          </p>
+          <ol>
+            <li>
+              Progettare su carta il markup finale, assegnando ad ogni specifico
+              testo il tag appropriato
+            </li>
+            <li>
+              Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso
+              il basso
+            </li>
+            <li>Applicare gli stili CSS</li>
+          </ol>
+        </div>
+
         <p>
           L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere
           la diffusione pressoché totale.
         </p>
-        <table>
-          <caption>
-            Diffusione del CSS
-          </caption>
-          <thead>
-            <tr>
-              <th>Anno</th>
-              <th>% di utilizzo</th>
-              <th>Supporto browsers</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>2000</td>
-              <td>20&percnt;</td>
-              <td>17&percnt;</td>
-            </tr>
-            <tr>
-              <td>2002</td>
-              <td>35&percnt;</td>
-              <td>22&percnt;</td>
-            </tr>
-            <tr>
-              <td>2004</td>
-              <td>45&percnt;</td>
-              <td>42&percnt;</td>
-            </tr>
-            <tr>
-              <td>2008</td>
-              <td>80&percnt;</td>
-              <td>51&percnt;</td>
-            </tr>
-            <tr>
-              <td>2012</td>
-              <td>100&percnt;</td>
-              <td>76&percnt;</td>
-            </tr>
-          </tbody>
-        </table>
+        <div id="table-container">
+          <table>
+            <caption>
+              Diffusione del CSS
+            </caption>
+            <thead>
+              <tr>
+                <th class="table-heading">Anno</th>
+                <th class="table-heading">% di utilizzo</th>
+                <th class="table-heading">Supporto browsers</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2000</td>
+                <td>20&percnt;</td>
+                <td>17&percnt;</td>
+              </tr>
+              <tr>
+                <td>2002</td>
+                <td>35&percnt;</td>
+                <td>22&percnt;</td>
+              </tr>
+              <tr>
+                <td>2004</td>
+                <td>45&percnt;</td>
+                <td>42&percnt;</td>
+              </tr>
+              <tr>
+                <td>2008</td>
+                <td>80&percnt;</td>
+                <td>51&percnt;</td>
+              </tr>
+              <tr>
+                <td>2012</td>
+                <td>100&percnt;</td>
+                <td>76&percnt;</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
         <p>
           Un test di validazione potrà essere fatto tramite il
           <a href="#" target="blank" title="Validatore CSS online del W3C"
